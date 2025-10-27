@@ -10,16 +10,17 @@
     <link href="images/favicon.png" rel="icon">
 </head>
 <body>
+    
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo"><img src="images/logo.png" alt="logo">Kwarfkanival</div>
+            <div class="logo"><a href="#home"><img src="images/logo.png" alt="logo">Kwarfkanival</a></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#portfolio">gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#"style="background-color:#ca4f07;padding:2px;color:#fff">Donate</a></li>
+                <li><a href="#donate"style="background-color:#ca4f07;padding:2px;color:#fff" class="donate" onclick="openBox()">Donate</a></li>
             </ul>
             <div class="mobile-menu-toggle" id="mobileMenuToggle">
                 <div class="hamburger"></div>
@@ -36,7 +37,7 @@
             <li><a href="#team">Team</a></li>
             <li><a href="#portfolio">gallery</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#"class="cta-button" >Donate</a></li>
+            <li><a href="#donate"class="cta-button" >Donate</a></li>
         </ul>
     </div>
 
@@ -140,21 +141,28 @@
                 <div class="col-lg-3">
                     <img src="images/onye.png" style="width:100%" alt="Onyemowo">
                     <div class="portfolio-content">
-                        <h4>Miss Caroline Mathias</h4>
+                        <h4>Caroline Mathias</h4>
                         <p>Runway Trainer Kwarf Kanival</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
                     <img src="images/pine.png" style="width:100%" alt="Pineter">
                     <div class="portfolio-content">
-                        <h4>Miss Pineter Oryina</h4>
+                        <h4>Pineter Oryina</h4>
                         <p>Children/Traditional Dance Cordinator</p>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <img src="images/dexma.png" style="width:100%" alt="Pineter">
+                    <img src="images/dexma.png" style="width:100%" alt="Dexma">
                     <div class="portfolio-content">
-                        <h4>Mr. Anule Dexma</h4>
+                        <h4>Anule Dexma</h4>
+                        <p>Consultant</p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <img src="images/vancouver.jpg" style="width:100%" alt="Vancouver">
+                    <div class="portfolio-content">
+                        <h4>Vancouver Ter Allam</h4>
                         <p>Consultant/Supervisor</p>
                     </div>
                 </div>
@@ -273,8 +281,8 @@
             <div class="contact-content">
                 <h2 class="section-title fade-in">Contact us</h2>
                 <p class="fade-in">For Enquireries,sponsorship/Partnership or advert placement please contact</p>
-                <p><i class="bi-envelope"></i> kwarfkanival@gmail.com</p>
-                <p><i class="bi-telephone"></i> +2347030355068 || +2348087837227</p>
+                <p><i class="bi-envelope"></i> Mykemagixstudio@gmail.com</p>
+                <p><i class="bi-telephone"></i> +2347030355068 || +2348087837227 || +2348085853054</p>
             </div>
             <div class="contact-content">
                 <h2 class="section-title fade-in">Our Partners</h2>
@@ -285,6 +293,7 @@
                 <p><i class="bi-unity"></i> Greg and co ICT Centre</p>
                 <p><i class="bi-unity"></i> Oxxbeemixx Studio</p>
                 <p><i class="bi-unity"></i> Wine and Spirit Bank</p>
+                <p><i class="bi-unity"></i> Digital People Nig Ltd</p>
                 <p><i class="bi-unity"></i> Obies Eatery</p>
                 <p><i class="bi-unity"></i> Prisdig Restaurant</p>
                 <p><i class="bi-unity"></i> Sedipen Foods</p>
@@ -294,6 +303,21 @@
                 <p><i class="bi-unity"></i> Goddy Shop</p>
                 <p><i class="bi-unity"></i> and a host of other individuals and organisations</p>
                 
+            </div>
+        </div>
+    </section>
+    <section id="donateBox" style="display:none">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Your Support can go a LONG way.</h2>
+                <p>
+                Thank you for choosing to Support.<br>
+                Kindly Transfer to The account Details below:<br>
+                <h2>Account Number:</h2>
+                <h2>Account Name: Mykemagix Studio</h2>
+                <h2>Bank:</h2>
+                Or Contact us for more INFORMATION
+                </p>
             </div>
         </div>
     </section>
@@ -308,7 +332,12 @@
             </div>
         </div>
     </footer>
-
+<script>
+  function openBox(){
+    document.getElementById("donateBox").style.display="block";
+    window.location.href="index.html#donateBox";
+  }  
+</script>
 <script src="javascripts.js"></script>
 </body>
 </html>
